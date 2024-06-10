@@ -13,9 +13,8 @@ def get_base64_image(image_path):
 def run_home(total_df):
   st.markdown('## 대시보드 개요 \n'
               '본 프로젝트는 **2024년 병무청_모집병 군지원 접수현황**을 제공하는 대시보드 입니다.\n'
-              '본 데이터는 **실시간**으로 계속 변동되는 데이터를 기반으로 하며, 프로젝트는 **5월 24일 기준** totalCount: 964건의 데이터를 CSV 파일에 저장하여 분석하였습니다. 이후 6월 6일 기준으로 totalCount: 755건으로 감소한 것을 확인할 수 있었습니다. 이는 접수기간이 만료된 것이 있는것으로 분석됩니다. 이러한 분석을 통해 실시간으로 변화하는 데이터를 반영하여 **유의미한 예측과 분석**을 제공합니다.\n')
-  st.markdown('데이터 자료 주소:\n'
-    'https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15031295\n')
+              '본 데이터는 **실시간**으로 계속 변동되는 데이터를 기반으로 하며, 프로젝트는 **5월 24일 기준** totalCount: 964건의 데이터를 CSV 파일에 저장하여 분석하였습니다. 이후 6월 6일 기준으로 totalCount: 755건으로 감소한 것을 확인할 수 있었습니다. 이는 접수기간이 만료된 것이 있는것을 확인할 수 있습니다. 이러한 분석을 통해 실시간으로 변화하는 데이터를 반영하여 **유의미한 예측과 분석**을 제공합니다.\n')
+  st.markdown('**공공 데이터 포털 :** <a href="https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15031295" style="text-decoration:none">병무청_모집병 군지원 접수현황</a>', unsafe_allow_html=True)
 
   image_path = 'rotc.jpeg'
   base64_image = get_base64_image(image_path)
