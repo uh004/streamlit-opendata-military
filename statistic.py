@@ -8,6 +8,7 @@ import matplotlib.font_manager as fm
 
 from pingouin import ttest
 from plotly.subplots import make_subplots
+import os
 
 def twoMeans(total_df,sgg_nm):
 
@@ -104,7 +105,8 @@ def corrRelation(total_df, sgg_nm):
     st.markdown(f'상관계수는 {corr_coef2.item()}이며, 지원율과 선발인원과의 관계성은 비교적 작다')
 
   # 한글 폰트 설정
-  path = 'C:\Windows\Fonts\H2MJRE.TTF'
+  # path = 'C:\Windows\Fonts\H2MJRE.TTF'
+  path = os.path.join(os.getcwd(), "Nanum_Gothic/NanumGothic-Bold.ttf")
   fontprop = fm.FontProperties(fname=path, size=12)  
   
   fig, ax = plt.subplots(figsize=(10, 6))
