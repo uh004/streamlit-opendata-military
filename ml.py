@@ -84,7 +84,7 @@ def predictDistrict(total_df) :
   
   fig, ax = plt.subplots(figsize=(30, 10), sharex=True, sharey=False, ncols=5, nrows=6)
 
-  st.markdown('### 육군 모집병 향후 예측 기간')
+  st.markdown('### 군구분 모집병 향후 예측 기간')
 
   # 서브플롯의 최대 행과 열 수 설정
   M_row = 6  # 최대 행 수
